@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/rany8598/public_html/toko.ranahtekno.com/
-    - /bin/rsync -av --delete --exclude='.git' public/ $DEPLOYPATH
+    - /bin/cp -R public/* $DEPLOYPATH
